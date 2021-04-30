@@ -13,4 +13,10 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run deploy
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GH_PAGE_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
