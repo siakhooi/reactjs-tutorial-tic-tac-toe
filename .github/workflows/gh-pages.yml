@@ -13,10 +13,5 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GH_PAGE_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: dist
+          git remote set-url origin ${{ secrets.GH_PAGE_TOKEN }}@github.com:siakhooi/reactjs-tutorial-tic-tac-toe.git
+          npm run deploy
