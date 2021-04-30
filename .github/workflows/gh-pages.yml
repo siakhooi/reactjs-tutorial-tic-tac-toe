@@ -13,5 +13,9 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          git remote set-url origin ${{ secrets.GH_PAGE_TOKEN }}@github.com:siakhooi/reactjs-tutorial-tic-tac-toe.git
-          npm run deploy
+          npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
