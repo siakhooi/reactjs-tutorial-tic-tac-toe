@@ -1,0 +1,16 @@
+name: deploy to gh-pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+build:
+  name: Build
+  runs-on: ubuntu-latest
+  steps:
+    - name: Check out code
+      uses: actions/checkout@v1
+ - name: Install and Build
+        run: |
+          npm install
+          npm run deploy
