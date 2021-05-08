@@ -1,5 +1,17 @@
-div#root {
-  zoom: 3;
+@media screen and (min-width: 1000px) {
+  div#root {
+    zoom: 3;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  div#root {
+    zoom: 2;
+  }
+}
+@media screen and (max-width: 300px) {
+  div#root {
+    zoom: 0.8;
+  }
 }
 
 body {
@@ -28,13 +40,13 @@ ul {
   float: left;
   font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
   width: 34px;
+  line-height: 34px;
+  height: 34px;
 }
 
 .square:focus {
