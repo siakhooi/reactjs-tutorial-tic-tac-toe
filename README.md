@@ -4,6 +4,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/siakhooi/reactjs-tutorial-tic-tac-toe)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/siakhooi/reactjs-tutorial-tic-tac-toe)  
+![test](https://github.com/siakhooi/reactjs-tutorial-tic-tac-toe/actions/workflows/test-eslint.yml/badge.svg)
 ![test](https://github.com/siakhooi/reactjs-tutorial-tic-tac-toe/actions/workflows/test-master.yml/badge.svg)
 ![test](https://github.com/siakhooi/reactjs-tutorial-tic-tac-toe/actions/workflows/test-coveralls.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/siakhooi/reactjs-tutorial-tic-tac-toe/badge.svg?branch=master)](https://coveralls.io/github/siakhooi/reactjs-tutorial-tic-tac-toe?branch=master)
