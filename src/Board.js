@@ -1,18 +1,18 @@
-import React from 'react';
-import Square from './Square';
+import React from 'react'
+import Square from './Square'
+import PropTypes from 'prop-types'
 
 class Board extends React.Component {
-
-  renderSquare(i) {
+  renderSquare (i) {
     return (
       <Square
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)}
       />
-    );
+    )
   }
 
-  render() {
+  render () {
     return (
       <div>
         <div className="board-row">
@@ -31,8 +31,13 @@ class Board extends React.Component {
           {this.renderSquare(8)}
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Board;
+Board.propTypes = {
+  onClick: PropTypes.func,
+  squares: PropTypes.array
+}
+
+export default Board
